@@ -41,8 +41,6 @@ class AuthorTwitter:
                 # Blogs with their own attribution format
                 elif 'venturebeat.com' in url:
                     author = code.cssselect('a.author-twitter')[0].text
-                elif 'fastcompany.com' in url:
-                    author = code.cssselect('meta[property="author"]')[0].get('content')
                 elif 'entrepreneur.com' in url:
                     author = code.xpath('//aside[@class="byline"] //div[@class="social"] //a[starts-with(@href, "https://twitter.com")]')[0].get('href').replace("https://twitter.com/", "")
                 elif 'techcrunch.com' in url:
