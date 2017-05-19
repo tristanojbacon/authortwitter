@@ -25,6 +25,7 @@ Requires:
 * convinceandconvert.com
 * engadget.com
 * entrepreneur.com
+* financemagnates.com
 * fivethirtyeight.com
 * kinja.com
 * lifehacker.com

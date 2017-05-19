@@ -30,7 +30,7 @@ class AuthorTwitter:
         return code
     def search_meta(self, url, code):
         # List of blogs that use the 'twitter:creator' meta tag and the actual author's username
-        twitter_creator_tagged = ['engadget.com', 'coindesk.com', 'conversionxl.com', 'blog.bufferapp.com', 'citylab.com', 'socialmediaexplorer.com', 'martech.zone']
+        twitter_creator_tagged = ['engadget.com', 'coindesk.com', 'conversionxl.com', 'blog.bufferapp.com', 'citylab.com', 'socialmediaexplorer.com', 'martech.zone', 'financemagnates.com']
         while True:
             try:
                 # Runs against blogs in the twitter_creator_tagged list if detected
