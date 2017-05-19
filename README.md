@@ -24,7 +24,9 @@ Requires:
 * entrepreneur.com
 * techcrunch.com
 * lifehacker.com
+* kinja.com
 * theverge.com
+* mashable.com
 * contentmarketing institute.com
 * socialmediatoday.com
 * shopify.com
@@ -32,5 +34,5 @@ Requires:
 * marketingland.com
 * convinceandconvert.com
 * contently.com
-  
-  
+* consumerist.com
+* nakedsecurity.sophos.com
