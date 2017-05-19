@@ -71,6 +71,8 @@ class AuthorTwitter:
                     author = code.cssselect('div.social-presenter a.icon-twitter')[0].get('href').replace("http://twitter.com/", "")
                 elif 'consumerist.com' in url:
                     author = code.cssselect('span.author a[class="twitter"]')[0].get('title')
+                elif 'nakedsecurity.sophos.com' in url:
+                    author = code.cssselect('div.entry-content a[class="twitter-follow-button"]')[1].get('href').replace("https://twitter.com/", "")
                 else:
                     author = 'null'
                 break
