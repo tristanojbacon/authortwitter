@@ -37,63 +37,48 @@ class AuthorTwitter:
                 # Some authors may not have included their username (or even have Twitter) in their blog profile, so this could still return 'null'
                 if any(domain in url for domain in twitter_creator_tagged):
                     author = code.cssselect('meta[name="twitter:creator"]')[0].get('content')
-                    break
 
-                if 'venturebeat.com' in url:
+                # Blogs with their own attribution format
+                elif 'venturebeat.com' in url:
                     author = code.cssselect('a.author-twitter')[0].text
-                    break
                 elif 'fastcompany.com' in url:
                     author = code.cssselect('meta[property="author"]')[0].get('content')
-                    break
                 elif 'entrepreneur.com' in url:
                     author = code.xpath('//aside[@class="byline"] //div[@class="social"] //a[starts-with(@href, "https://twitter.com")]')[0].get('href').replace("https://twitter.com/", "")
-                    break
                 elif 'techcrunch.com' in url:
                     author = code.cssselect('span.twitter-handle a')[0].text
-                    break
                 elif 'lifehacker.com' in url:
                     author = code.cssselect('a.author-bio__twitter')[0].get('href').replace("https://twitter.com/", "")
-                    break
                 elif 'theverge.com' in url:
                     author = code.cssselect('a.c-byline__twitter-handle')[0].text
-                    break
                 elif 'contentmarketinginstitute.com' in url:
                     author = code.xpath('//div[@id="author_box"] //a[starts-with(@href, "https://twitter.com")]/text()')[0]
-                    break
                 elif 'socialmediatoday.com' in url:
                     author = code.cssselect('div.views-field-field-user-twitter-url a')[0].text
-                    break
                 elif 'shopify.com' in url:
                     text = code.cssselect('div.about-the-author a.twitter-follow-button')[0].text
                     author = self.parse_twitter_button(text)
-                    break
                 elif 'theregister.co.uk' in url:
                     author_url = code.cssselect('div.byline a[title="Read more by this author"]')[0].get('href')
                     author_url = urljoin(url, author_url)
                     code = self.scrape_author_page(author_url)
                     author = code.cssselect('div.columnist a.tweet_link')[0].get('href').replace("http://twitter.com/intent/user?screen_name=", "")
-                    break
                 elif 'marketingland.com' in url:
                     author = self.parse_twitter_button_iframe(code.cssselect('div.author-module iframe[id="twitter-widget-0"]')[0].get('src'))
-                    break
                 elif 'convinceandconvert.com' in url:
                     author = code.cssselect('div.written-by a.twitter-follow-button')[0].get('href').replace("https://twitter.com/", "")
-                    break
                 elif 'contently.com' in url:
                     author_url = code.cssselect('span.credits a')[0].get('href')
                     code = self.scrape_author_page(author_url)
                     author = code.cssselect('div.social-presenter a.icon-twitter')[0].get('href').replace("http://twitter.com/", "")
-                    break
                 else:
-                    print("-> Something went wrong")
                     author = 'null'
-                    break
+                break
             except IndexError:
                     author = 'null'
                     print("-> No author Twitter username detected")
                     break
-        if "@" in author:
-            author = author.replace("@","")
+        author = author.replace("@","")
         return author
 
     def extract_author(self, url):
