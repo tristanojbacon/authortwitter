@@ -49,6 +49,11 @@ class AuthorTwitter:
                     author = code.cssselect('a.author-bio__twitter')[0].get('href').replace("https://twitter.com/", "")
                 elif 'theverge.com' in url:
                     author = code.cssselect('a.c-byline__twitter-handle')[0].text
+                elif 'mashable.com' in url:
+                    author_url = code.cssselect('span.byline span.author_name a')[0].get('href')
+                    author_url = urljoin(url, author_url)
+                    code = self.scrape_author_page(author_url)
+                    author = code.cssselect('div.profile-networks a.network-badge-twitter')[0].get('href').replace("https://twitter.com/", "")
                 elif 'contentmarketinginstitute.com' in url:
                     author = code.xpath('//div[@id="author_box"] //a[starts-with(@href, "https://twitter.com")]/text()')[0]
                 elif 'socialmediatoday.com' in url:
