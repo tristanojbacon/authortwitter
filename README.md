@@ -31,6 +31,7 @@ Requires:
 * marketingland.com
 * martech.zone
 * mashable.com
+* medium.com (Blogs with custom domains planned)
 * nakedsecurity.sophos.com
 * shopify.com
 * socialmediaexplorer.com
