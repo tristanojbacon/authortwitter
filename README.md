@@ -7,12 +7,12 @@ Compatible with Python 3.x
 Requires:
 `lxml`, `requests`, `urllib`, `re`
 
-##Examples
+## Examples
 `https://www.engadget.com/2017/05/19/watch-an-ai-teach-itself-to-drive-in-gta-v/` will output `OutOnALumb`
 `https://contently.com/strategist/2017/05/18/new-demand-waterfall/` will output `JoeLazauskas`
 `http://contentmarketinginstitute.com/2017/05/create-high-converting-content/` will output `shane_barker`
 
-##Blogs supported
+## Blogs supported
 * engadget.com
 * coindesk.com
 * conversionxl.com
