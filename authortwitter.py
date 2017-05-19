@@ -45,7 +45,7 @@ class AuthorTwitter:
                     author = code.xpath('//aside[@class="byline"] //div[@class="social"] //a[starts-with(@href, "https://twitter.com")]')[0].get('href').replace("https://twitter.com/", "")
                 elif 'techcrunch.com' in url:
                     author = code.cssselect('span.twitter-handle a')[0].text
-                elif 'lifehacker.com' in url:
+                elif ('lifehacker.com' in url) or ('kinja.com' in url):
                     author = code.cssselect('a.author-bio__twitter')[0].get('href').replace("https://twitter.com/", "")
                 elif 'theverge.com' in url:
                     author = code.cssselect('a.c-byline__twitter-handle')[0].text
