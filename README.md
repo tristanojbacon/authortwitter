@@ -27,7 +27,7 @@ Requires:
 * kinja.com
 * theverge.com
 * mashable.com
-* contentmarketing institute.com
+* contentmarketinginstitute.com
 * socialmediatoday.com
 * shopify.com
 * theregister.co.uk
