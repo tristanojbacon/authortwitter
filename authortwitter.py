@@ -76,6 +76,12 @@ class AuthorTwitter:
                     author_url = code.cssselect('span.credits a')[0].get('href')
                     code = self.scrape_author_page(author_url)
                     author = code.cssselect('div.social-presenter a.icon-twitter')[0].get('href').replace("http://twitter.com/", "")
+                elif 'blogs.cisco.com' in url:
+                    author_url = code.cssselect('span.list_author a[rel="author"]')[0].get('href')
+                    code = self.scrape_author_page(author_url)
+                    author = code.cssselect('div#author_links a.author_twitter')[0].get('href')
+                    author = author.replace("https://twitter.com/", "")
+                    author = author.replace("https://www.twitter.com/", "")
                 elif 'consumerist.com' in url:
                     author = code.cssselect('span.author a[class="twitter"]')[0].get('title')
                 elif 'nakedsecurity.sophos.com' in url:

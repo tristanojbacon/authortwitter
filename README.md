@@ -16,6 +16,7 @@ Requires:
 <pre>
 * bufferapp.com
 * citylab.com
+* blogs.cisco.com
 * coindesk.com
 * consumerist.com
 * contently.com
