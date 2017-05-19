@@ -58,6 +58,8 @@ class AuthorTwitter:
                     author = code.xpath('//div[@id="author_box"] //a[starts-with(@href, "https://twitter.com")]/text()')[0]
                 elif 'socialmediatoday.com' in url:
                     author = code.cssselect('div.views-field-field-user-twitter-url a')[0].text
+                elif 'fivethirtyeight.com' in url:
+                    author = code.cssselect('div.mini-bio span.twitter-username')[0].text
                 elif 'shopify.com' in url:
                     text = code.cssselect('div.about-the-author a.twitter-follow-button')[0].text
                     author = self.parse_twitter_button(text)
