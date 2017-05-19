@@ -13,26 +13,28 @@ Requires:
 `http://contentmarketinginstitute.com/2017/05/create-high-converting-content/` will output `shane_barker`
 
 ## Blogs supported
-* engadget.com
-* coindesk.com
-* conversionxl.com
+<pre>
 * bufferapp.com
 * citylab.com
-* socialmediaexplorer.com
-* martech.zone
-* venturebeat.com
-* entrepreneur.com
-* techcrunch.com
-* lifehacker.com
-* kinja.com
-* theverge.com
-* mashable.com
-* contentmarketinginstitute.com
-* socialmediatoday.com
-* shopify.com
-* theregister.co.uk
-* marketingland.com
-* convinceandconvert.com
-* contently.com
+* coindesk.com
 * consumerist.com
+* contently.com
+* contentmarketinginstitute.com
+* conversionxl.com
+* convinceandconvert.com
+* engadget.com
+* entrepreneur.com
+* kinja.com
+* lifehacker.com
+* marketingland.com
+* martech.zone
+* mashable.com
 * nakedsecurity.sophos.com
+* shopify.com
+* socialmediaexplorer.com
+* socialmediatoday.com
+* techcrunch.com
+* theregister.co.uk
+* theverge.com
+* venturebeat.com
+</pre>
