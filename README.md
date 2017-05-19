@@ -27,6 +27,7 @@ Requires:
 * entrepreneur.com
 * financemagnates.com
 * fivethirtyeight.com
+* blog.hootsuite.com
 * kinja.com
 * lifehacker.com
 * marketingland.com
