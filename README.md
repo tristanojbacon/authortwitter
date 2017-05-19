@@ -13,6 +13,7 @@ Requires:
 `http://contentmarketinginstitute.com/2017/05/create-high-converting-content/` will output `shane_barker`
 
 ## Blogs supported
+<pre>
 * engadget.com
 * coindesk.com
 * conversionxl.com
@@ -36,3 +37,4 @@ Requires:
 * contently.com
 * consumerist.com
 * nakedsecurity.sophos.com
+</pre>
