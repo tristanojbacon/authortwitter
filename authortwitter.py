@@ -9,6 +9,7 @@ import requests
 from urllib.parse import urljoin
 import urllib.parse as urlparse
 import re
+import time
 
 class AuthorTwitter:
     def  __init__(self):
@@ -69,6 +70,11 @@ class AuthorTwitter:
                     author_url = code.cssselect('span.credits a')[0].get('href')
                     code = self.scrape_author_page(author_url)
                     author = code.cssselect('div.social-presenter a.icon-twitter')[0].get('href').replace("http://twitter.com/", "")
+                '''
+                elif 'datafloq.com' in url:
+                    # Loading of blog content is delayed by a script, need to add dryscrape functionality to force-load JavaScript
+                    author = code.xpath('//div[@class="author"] //a[starts-with(@href, "https://twitter.com")]/@href')[0]
+                '''
                 else:
                     author = 'null'
                 break
