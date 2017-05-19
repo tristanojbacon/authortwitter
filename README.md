@@ -21,7 +21,6 @@ Requires:
 * socialmediaexplorer.com
 * martech.zone
 * venturebeat.com
-* fastcompany.com
 * entrepreneur.com
 * techcrunch.com
 * lifehacker.com
