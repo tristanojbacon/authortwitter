@@ -23,6 +23,7 @@ Requires:
 * contentmarketinginstitute.com
 * conversionxl.com
 * convinceandconvert.com
+* digitaltrends.com
 * engadget.com
 * entrepreneur.com
 * financemagnates.com
@@ -44,4 +45,5 @@ Requires:
 * theregister.co.uk
 * theverge.com
 * venturebeat.com
+* wired.co.uk
 </pre>
