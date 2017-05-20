@@ -12,6 +12,15 @@ Requires:
 `https://contently.com/strategist/2017/05/18/new-demand-waterfall/` will output `JoeLazauskas`
 `http://contentmarketinginstitute.com/2017/05/create-high-converting-content/` will output `shane_barker`
 
+## Usage
+<pre>
+from authortwitter import AuthorTwitter
+
+get_username = AuthorTwitter()
+url = 'https://contently.com/strategist/2017/05/18/new-demand-waterfall/'
+return get_username.extract_author(url)
+</pre>
+
 ## Blogs supported
 <pre>
 * bufferapp.com
