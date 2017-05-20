@@ -35,6 +35,7 @@ Requires:
 * mashable.com
 * medium.com (Blogs with custom domains planned)
 * nakedsecurity.sophos.com
+* readwrite.com
 * shopify.com
 * socialmediaexplorer.com
 * socialmediatoday.com
