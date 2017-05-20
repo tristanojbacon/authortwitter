@@ -18,7 +18,7 @@ from authortwitter import AuthorTwitter
 
 get_username = AuthorTwitter()
 url = 'https://contently.com/strategist/2017/05/18/new-demand-waterfall/'
-return get_username.extract_author(url)
+return get_username.extract_author(url) # Returns 'JoeLazauskas'
 </pre>
 
 ## Blogs supported
