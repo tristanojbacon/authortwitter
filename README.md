@@ -39,6 +39,7 @@ Requires:
 * socialmediaexplorer.com
 * socialmediatoday.com
 * techcrunch.com
+* thehackernews.com
 * theregister.co.uk
 * theverge.com
 * venturebeat.com

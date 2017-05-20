@@ -73,6 +73,9 @@ class AuthorTwitter:
                     text = code.cssselect('div.about-the-author a.twitter-follow-button')[0].text
                     author = self.parse_twitter_button(text)
 
+                elif 'thehackernews.com' in url:
+                    author = code.cssselect('div.author-info-bio a.a-tw')[0].get('href').replace("https://twitter.com/", "")
+
                 elif 'theregister.co.uk' in url:
                     author_url = code.cssselect('div.byline a[title="Read more by this author"]')[0].get('href')
                     author_url = urljoin(url, author_url)
