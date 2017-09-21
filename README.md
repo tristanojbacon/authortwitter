@@ -23,6 +23,7 @@ return get_username.extract_author(url) # Returns 'JoeLazauskas'
 
 ## Blogs supported
 <pre>
+* (Any website that uses the <meta name="twitter:creator"> tag)
 * bufferapp.com
 * citylab.com
 * blogs.cisco.com
